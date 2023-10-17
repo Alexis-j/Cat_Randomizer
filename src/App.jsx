@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const CAT_ENDPOINT_RANDOM_FACT = 'https://catfact.ninja/fact';
+const CAT_ENDPOINT_RANDOM_FACT = 'https://catfact.ninja/fact'
 // const CAT_ENDPOINT_IMG_URL = `https://cataas.com/cat/says/${firstWord}?size=50&color=red&json=true`
 const CAT_PREFIX_IMAGE_URL = 'https://cataas.com/'
 export function App () {
@@ -19,6 +19,7 @@ export function App () {
         fetch(`https://cataas.com/cat/says/${firstWord}?size=50&color=red&json=true`)
           .then(res => res.json())
           .then(response => {
+            console.log(response)// Comprueba la respuesta en la consola
             const { url } = response
             setImageUrl(url)
           })
