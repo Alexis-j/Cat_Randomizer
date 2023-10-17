@@ -1,0 +1,40 @@
+main{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: system-ui;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+}
+section img {
+  max-width: auto;
+  height:500px;
+  border-radius: 10%;
+}
+.card{
+  background-color: red;
+  border-radius: 10%;
+  height: 100%;
+}
+.title{
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+.echo{
+  background-color: aliceblue;
+  color: black;
+  padding: 2rem;
+  font-weight: bold;
+  min-width: 80%;
+  border-radius: 50%;
+  text-align: center;
+}
